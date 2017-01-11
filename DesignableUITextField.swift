@@ -9,16 +9,16 @@
 import UIKit
 
 @IBDesignable
-class DesignableUITextField: UITextField {
+public class DesignableUITextField: UITextField {
     
     // Provides left padding for images
-    override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
+    override public func leftViewRect(forBounds bounds: CGRect) -> CGRect {
         var textRect = super.leftViewRect(forBounds: bounds)
         textRect.origin.x += leftPadding
         return textRect
     }
     
-    override func rightViewRect(forBounds bounds: CGRect) -> CGRect {
+    override public func rightViewRect(forBounds bounds: CGRect) -> CGRect {
         var textRect = super.rightViewRect(forBounds: bounds)
         textRect.origin.x -= rightPadding
         return textRect

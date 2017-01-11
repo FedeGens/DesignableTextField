@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 s.platform = :ios
 s.ios.deployment_target = '8.0'
 s.name = "DesignableTextField"
-s.summary = "Cachy is an image caching library."
+s.summary = "Storyboard designable UITextField with right and left image properties."
 s.requires_arc = true
 
 # 2

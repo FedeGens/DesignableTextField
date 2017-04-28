@@ -61,7 +61,7 @@ public class DesignableUITextField: UITextField {
     
     @IBInspectable var textPadding: CGFloat = 0 {
         didSet {
-            let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: placeholderPadding, height: self.frame.height))
+            let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: textPadding, height: self.frame.height))
             self.leftView = paddingView
             self.leftViewMode = .always
         }
